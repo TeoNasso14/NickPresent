@@ -16,7 +16,7 @@
             background-size: cover;
             max-width: 500px;
             margin: 0 auto;
-            height: 800px;
+            height: 1000px;
             overflow: hidden;
             margin-top: auto;
         }
@@ -41,13 +41,15 @@
                 <input type="submit" value="Accedi">
             </form>
         </div>
+
+        <h3>per un altro indizio.. ti dovrai far insultare </h1>
     </div>
 
     <script>
         document.getElementById("login-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Impedisce l'invio predefinito del modulo
             var password = document.getElementById("password").value;
-            if (password == "nemiex") {
+            if (password == "sentierodeimorti") {
                 window.location.href = "home.html";
             } else {
                 alert("Password errata!");

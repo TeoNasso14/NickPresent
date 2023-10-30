@@ -5,13 +5,21 @@ html{
 
 h1{
     font-family: 'Livvic', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     color: #3535ec;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 
 }
+
+h3{
+    text-align: center;
+    color: #120945;
+    margin-bottom: 20px;
+}
+
+
 .background-overlay {
     position: absolute;
     top: 0;
@@ -46,4 +54,91 @@ input[type="password"]:focus + .background-overlay {
 
 form{
     margin-bottom: 50px;
+}
+
+
+.modal-content{
+    margin-bottom: 12px;
+}
+.modal-content * {
+max-width: 350px;
+}
+.modal-button {
+    border: 0;
+    padding: 8px 12px;
+    font-size: 20px;
+    background-color: #3535ec;
+    color: white;
+    border-radius: 12px;
+}
+
+.modal-hidden{
+    visibility: hidden;
+}
+
+.modal-hidden .modal-window {
+    transform: scale(0);
+  }
+
+  .modal-window{
+    min-width: 320px;
+  min-height: 320px;
+  background-color: #de7eb6;
+  border-radius: 12px;
+
+  padding: 32px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  transform: scale(1);
+
+  transition: transform 0.5s;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 74, 0.8);
+    
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 2;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: #306753;
+    border-radius: 12px;
+    margin: 5px;
+
+    color: #d4d6f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 500px;
+    height: 800px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.model-icon{
+    width: 50px;
+    height: 50px;
 }
