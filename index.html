@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nick Present</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .background {
+            /*background-image: url(img/sfondo.jpg); /* Sostituisci 'sfondo.jpg' con il percorso dell'immagine di sfondo desiderata */
+            background-size: cover;
+            max-width: 500px;
+            margin: 0 auto;
+            height: 800px;
+            overflow: hidden;
+        }
+
+        img{
+            width: 140%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="img">
+            <img src="img/IMG_9210.jpg" alt="Descrizione dell'immagine">
+        </div>
+        <div class="login-container">
+            <form id="login-form">
+                <input type="password" placeholder="Password" id="password" autocomplete="off">
+                <br><br>
+                <input type="submit" value="Accedi">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impedisce l'invio predefinito del modulo
+            var password = document.getElementById("password").value;
+            if (password == "nemiex") {
+                window.location.href = "psw2.html";
+            } else {
+                alert("Password errata!");
+            }
+        });
+    </script>
+</body>
+</html>
