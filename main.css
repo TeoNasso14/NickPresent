@@ -5,7 +5,7 @@ html{
 
 h1{
     font-family: 'Livvic', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: #3535ec;
     text-align: center;
     margin-top: 30px;
@@ -14,6 +14,7 @@ h1{
 }
 
 h3{
+    font-size: 10px;
     text-align: center;
     color: #120945;
     margin-bottom: 20px;
