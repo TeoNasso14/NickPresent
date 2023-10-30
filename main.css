@@ -54,7 +54,7 @@ input[type="password"]:focus + .background-overlay {
 }
 
 form{
-    margin-bottom: 50px;
+    margin: auto;
 }
 
 
